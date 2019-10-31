@@ -1,7 +1,7 @@
 {
     "require": {
         "vlucas/phpdotenv": "^3.6",
-        "markrogoyski/simplelog-php": "dev-custom-0.4.0",
+        "markrogoyski/simplelog-php": "0.*",
         "rakibtg/sleekdb": "^1.5",
         "nesbot/carbon": "^2.24",
         "opis/container": "^3.0"

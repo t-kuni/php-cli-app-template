@@ -1,5 +1,5 @@
 # steps:
 #   - name: gcr.io/cloud-builders/docker
-#     args: ['build', '-f', 'env/app/Dockerfile', '-t', 'gcr.io/github-issue-2-anki-card/github-issue-2-anki-card', '.']
+#     args: ['build', '-f', 'env/app/Dockerfile', '-t', 'gcr.io/[name]/[name]', '.']
 # images:
-#   - 'gcr.io/github-issue-2-anki-card/github-issue-2-anki-card'
+#   - 'gcr.io/[name]/[name]'

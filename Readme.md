@@ -21,7 +21,7 @@ docker-compose build app-debug
 Install php libraries.
 
 ```
-docker-compose run --rm app composer install
+docker-compose run --rm app-debug composer install
 ```
 
 Install node packages.  
@@ -31,14 +31,14 @@ Run follow command on host OS.
 npm install
 ```
 
-# Run
+# Run app
 
 ```
-docker-compose run --rm app
+docker-compose run --rm app-debug
 ```
 
-# Boot shell
+# Start shell
 
 ```
-docker-compose run --rm app sh
+docker-compose run --rm app-debug sh
 ```
