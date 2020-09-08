@@ -4,6 +4,7 @@
         "markrogoyski/simplelog-php": "0.*",
         "rakibtg/sleekdb": "^1.5",
         "nesbot/carbon": "^2.24",
+        "vanilla/garden-cli": "~2.0",
         "opis/container": "^3.0"
     },
     "repositories": [

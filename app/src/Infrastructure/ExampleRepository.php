@@ -3,11 +3,10 @@
 
 namespace TKuni\PhpCliAppTemplate\Infrastructure;
 
-
-use Carbon\Carbon;
 use Psr\Log\LoggerInterface;
 use SleekDB\SleekDB;
 use TKuni\PhpCliAppTemplate\Domain\Models\ExampleModel;
+use TKuni\PhpCliAppTemplate\Infrastructure\interfaces\IExampleRepository;
 
 class ExampleRepository implements IExampleRepository
 {

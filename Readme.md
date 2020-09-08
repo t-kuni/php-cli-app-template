@@ -10,6 +10,12 @@ cd [ProjectName]
 rm -rf .git 
 ```
 
+パッケージ名の変更
+
+1. プロジェクト全体の`TKuni\PhpCliAppTemplate`を任意の名称に置換する
+2. composer.jsonの`TKuni\\PhpCliAppTemplate`を上記と同様に変更する（\記号が２つな点に注意）
+
+
 # Build
 
 Build container.

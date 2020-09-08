@@ -6,6 +6,8 @@ use Dotenv\Dotenv;
 use Opis\Container\Container;
 use Psr\Log\LoggerInterface;
 use SimpleLog\Logger;
+use TKuni\PhpCliAppTemplate\Infrastructure\ArgsAdapter;
+use TKuni\PhpCliAppTemplate\Infrastructure\interfaces\IArgsAdapter;
 use TKuni\PhpCliAppTemplate\Infrastructure\interfaces\IExampleRepository;
 use TKuni\PhpCliAppTemplate\Infrastructure\ExampleRepository;
 
@@ -22,11 +24,14 @@ Dotenv::create(__DIR__)->safeLoad();
 $app = new Container();
 
 $app->bind('app', App::class);
+$app->bind(IArgsAdapter::class, function() use ($argv) {
+    return new ArgsAdapter($argv);
+});
 $app->singleton(LoggerInterface::class, function() {
     $logger = new Logger('/dev/null', 'default');
-    $logger->setPostHook(function($log_line) {
-        // send to another logger if you want.
-    });
+//    $logger->setPostHook(function($log_line) {
+//        // send to another logger if you want.
+//    });
     $logger->setOutput(true);
     return $logger;
 });
