@@ -1,4 +1,14 @@
 {
+    "name": "t-kuni/php-cli-app-template",
+    "description": "template of cli app for php.",
+    "keywords": ["template", "composer", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "t-kuni",
+            "email": "dummy@example.com"
+        }
+    ],
     "require": {
         "vlucas/phpdotenv": "^3.6",
         "markrogoyski/simplelog-php": "0.*",
